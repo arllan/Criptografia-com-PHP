@@ -33,7 +33,9 @@
     }
     echo "<hr>";
 
-    // Criptografando com MD5
+
+
+    // Criptografando com MD5 e SHA1
 
     $MeuTexto = "meu nome e arllan pablo";
 
@@ -64,5 +66,24 @@
 
     echo '<hr>';
 
+
+    // Criptografia Tradicional
+
+$string = "meu texto a ser encriptado"; // string a ser criptografada
+$algoritmo = "AES128"; // padrão da criptografia
+$chave = "wNYtCnelXfOa6uiJ"; 
+$iv = "wNYtCnelXfOa6uiJ";
+
+$mensagem = openssl_encrypt($string, $algoritmo, $chave, OPENSSL_RAW_DATA, $iv);
+echo base64_encode($mensagem) ."<br>"; 
+
+
+$mensagem = "z++stGXlVbdMvMvD3w7CydA4BdWraoXUn7NS40GmVvM=";
+$algoritimo = "AES128";
+$chave = "wNYtCnelXfOa6uiJ";
+$iv = "wNYtCnelXfOa6uiJ";
+
+$mensagem = openssl_decrypt(base64_decode($mensagem), $algoritimo, $chave, OPENSSL_RAW_DATA, $iv);
+echo $mensagem ."<br>";
 
 ?>

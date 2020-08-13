@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>criptografia</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="#">CONVERSOR DE CRIPTOGRAFIA</a><button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+            <div
+                class="collapse navbar-collapse" id="navcol-2">
+                <ul class="nav navbar-nav"></ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" id="linha">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="well"><center><span id="Titulo">CRIPTOGRAFAR</span></center> 
+                    <form><textarea style="height: 300px;" class="form-control input-lg" id="text-criptografar" name="texto" placeholder="Escreva o texto a ser criptografado aqui" id="areaTexto"></textarea></form>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span><br></span></div><input id="chave-criptografar" class="form-control" type="text" placeholder="CHAVE DE 16 BIT" required minlength="16" maxlength="16">
+                        <div class="input-group-btn"><button id="criptografar" class="btn btn-info" type="button">CRIPTOGRAFAR</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="well"><center><span id="Titulo">DESCRIPTOGRAFAR</span></center>
+                    <form><textarea style="height: 300px;" id="text-descriptografar" class="form-control input-lg" name="texto" placeholder="Escreva o texto a ser descriptografado aqui"></textarea></form>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span></span></div><input id="chave-descriptografar" class="form-control" type="text" placeholder="CHAVE DE 16 BIT" required minlength="16" maxlength="16">
+                        <div class="input-group-btn"><button id="descriptografar" class="btn btn-info" type="button">DESCRIPTOGRAFAR</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
